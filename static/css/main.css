@@ -78,8 +78,7 @@ nav ul li a:hover{
     cursor:pointer;
 }
 
-#mobile-menu-button:hover,
-button.active{
+#mobile-menu-button:hover{
     color:#444;
 }
 
