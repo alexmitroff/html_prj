@@ -11,6 +11,7 @@ body{
     display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
     min-height:100vh; /* 100% viewport height */
+    font-family:sans;
 }
 
 header{
@@ -30,6 +31,25 @@ footer{
     background-color:#444;
     color: #fff; /* font color */
     min-height: 10rem;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-around;
+}
+
+nav ul li {
+    padding:1rem;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#888;
+}
+
+nav ul li a:hover{
+    color:#444;
 }
 
 /* Rules for mobile horisontal and tablet vertical */
