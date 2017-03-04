@@ -43,6 +43,7 @@ footer{
 nav ul{
     list-style:none;
     display:flex;
+    flex-direction:column;
     justify-content:space-around;
 }
 
@@ -74,7 +75,9 @@ nav ul li a:hover{
 }
 
 /* Rules commot to screens bigger than tablet screens */
-@media (min-width:768px) {}
+@media (min-width:768px) {
+    nav > ul{flex-direction:row;}
+}
 
 /* Rules for tablet horisontal and small ultrabook screens */
 @media (min-width:768px) and (max-width:919px) {
