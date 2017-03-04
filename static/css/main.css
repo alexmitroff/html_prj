@@ -8,6 +8,9 @@
 
 body{
     background-color:#eee;
+    display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    flex-direction:column;
+    min-height:100vh; /* 100% viewport height */
 }
 
 header{
@@ -18,7 +21,9 @@ header{
                             or 'rgba(255,255,255,1.0)' */
 }
 
-main {}
+main {
+    flex-grow:1;
+}
 
 footer{
     display:block;
