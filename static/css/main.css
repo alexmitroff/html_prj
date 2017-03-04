@@ -77,6 +77,7 @@ nav ul li a:hover{
 /* Rules commot to screens bigger than tablet screens */
 @media (min-width:768px) {
     nav > ul{display:flex; flex-direction:row;}
+    #mobile-menu-button{display:none;}
 }
 
 /* Rules for tablet horisontal and small ultrabook screens */
