@@ -24,6 +24,7 @@ header{
 
 main {
     flex-grow:1;
+    padding: 1rem 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
 }
 
 footer{
