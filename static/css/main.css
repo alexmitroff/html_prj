@@ -42,7 +42,7 @@ footer{
 
 nav ul{
     list-style:none;
-    display:flex;
+    display:none;
     flex-direction:column;
     justify-content:space-around;
 }
@@ -93,7 +93,7 @@ nav ul li a:hover{
 
 /* Rules commot to screens bigger than tablet screens */
 @media (min-width:768px) {
-    nav > ul{flex-direction:row;}
+    nav > ul{display:flex;flex-direction:row;}
     #mobile-menu-button + label{display:none;}
 }
 
