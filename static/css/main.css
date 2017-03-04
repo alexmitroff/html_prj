@@ -86,6 +86,10 @@ nav ul li a:hover{
     color:#444;
 }
 
+#mobile-menu-button:checked + label + ul{
+    display:flex;
+}
+
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width:560px) and (max-width:767px) {
     main > div{background-color:orange;}
