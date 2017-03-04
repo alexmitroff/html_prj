@@ -69,6 +69,23 @@ nav ul li a:hover{
     margin:0 auto;
 }
 
+#mobile-menu-button{
+    display:none;
+}
+
+#mobile-menu-button + label{
+    display:block;
+    padding:1rem;
+    color:#888;
+    cursor:pointer;
+}
+
+
+#mobile-menu-button + label:hover,
+#mobile-menu-button:checked + label{
+    color:#444;
+}
+
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width:560px) and (max-width:767px) {
     main > div{background-color:orange;}
