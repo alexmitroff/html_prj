@@ -26,6 +26,13 @@
         </main>
         <footer></footer>
         <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
-        <script type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#mobile-menu-button").click(function(){
+                    $( this ).toggleClass("active");
+                    $("#global-menu").toggleClass("active");
+                });
+            });
+        </script>
     </body>
 </html>
