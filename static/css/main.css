@@ -63,6 +63,11 @@ nav ul li a:hover{
     color:#444;
 }
 
+.container{
+    width:100%;
+    margin:0 auto;
+}
+
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width:560px) and (max-width:767px) {
     main > div{background-color:orange;}
@@ -79,9 +84,11 @@ nav ul li a:hover{
 /* Rules for middle screens */
 @media (min-width:920px) and (max-width:1199px) {
     main > div{background-color:green;}
+    .container{width:920px;}
 }
 
 /* Rules for large screens */
 @media (min-width:1200px) {
     main > div{background-color:skyblue;}
+    .container{width:920px;}
 }
