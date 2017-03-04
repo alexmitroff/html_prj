@@ -27,6 +27,12 @@ main {
     padding: 1rem 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
 }
 
+main > div{
+    display:block;
+    background-color:red;
+    height:100%;
+}
+
 footer{
     display:block;
     background-color:#444;
