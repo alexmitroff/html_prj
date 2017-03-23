@@ -1,4 +1,9 @@
 /* Rules for small devices (mobile vertical) */
+@font-face{
+    font-family:'Titillium Web';
+    src:url(../fonts/TitilliumWeb-Regular.ttf);
+}
+
 
 * {
     margin:0;
@@ -11,7 +16,8 @@ body{
     display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
     min-height:100vh; /* 100% viewport height */
-    font-family:sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    color:#444;
 }
 
 header{
@@ -29,14 +35,28 @@ main {
 
 main > div.container{
     display:block;
-    background-color:red;
+    background-color:white;
 }
 
 footer{
-    display:block;
+    display:flex;
+    flex-direction: column;
     background-color:#444;
     color: #fff; /* font color */
     min-height: 10rem;
+    padding-top:1rem;
+}
+
+footer > .container{
+    flex-grow: 1;
+}
+
+footer .copyright{
+    padding:.5rem 0;
+    color:#888;
+    text-align: center;
+    font-size: .6rem;
+    background-color: rgba(0,0,0,.4);
 }
 
 nav ul{
@@ -142,54 +162,76 @@ ul.active{
 
 section{
     display:flex;
+    flex-direction: column;
 }
 
 section > .section-image{
-    background-color: #888;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../imgs/sections/01.png);
+    background-repeat: no-repeat;
+}
+
+section > .section-text{
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section > .section-text > h3{
+    margin-bottom:1rem;
 }
 
 section > .section-image,
 section > .section-text{
-    width:50%;
+    width:100%;
     min-height:20rem;
 }
 
 section:nth-child(even) > .section-image,
-section:nth-child(odd) > .section-text{
+section:nth-child(odd) > .section-image{
     order:0;
 }
 
-section:nth-child(odd) > .section-image,
-section:nth-child(even) > .section-text{
+section:nth-child(even) > .section-text,
+section:nth-child(odd) > .section-text{
     order:1;
 }
 
+.address{
+    list-style: none;
+}
 
 
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width:560px) and (max-width:767px) {
-    main > div.container{background-color:orange;}
 }
 
 /* Rules commot to screens bigger than tablet screens */
 @media (min-width:768px) {
     nav > ul{display:flex; flex-direction:row;}
     #mobile-menu-button{display:none;}
+    section{flex-direction: row;}
+    section > .section-image,
+    section > .section-text{width:50%;}
+    section:nth-child(even) > .section-image,
+    section:nth-child(odd) > .section-text{order:0;}
+    section:nth-child(odd) > .section-image,
+    section:nth-child(even) > .section-text{order:1;}
 }
 
 /* Rules for tablet horisontal and small ultrabook screens */
 @media (min-width:768px) and (max-width:919px) {
-    main > div.container{background-color:yellow;}
 }
 
 /* Rules for middle screens */
 @media (min-width:920px) and (max-width:1199px) {
-    main > div.container{background-color:green;}
     .container{width:920px;}
 }
 
 /* Rules for large screens */
 @media (min-width:1200px) {
-    main > div.container{background-color:skyblue;}
     .container{width:920px;}
 }
