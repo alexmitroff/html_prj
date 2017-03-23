@@ -23,15 +23,13 @@ header{
 }
 
 main {
-    flex-grow:1;
+    flex: 1 0 auto;
     padding-bottom: 1rem;
-    height:auto;
 }
 
 main > div.container{
     display:block;
     background-color:red;
-    height:100%;
 }
 
 footer{
@@ -105,6 +103,10 @@ ul.active{
     width:100%;
     min-height:100vh;
     background-color:gray;
+}
+
+section{
+    display:flex;
 }
 
 /* Rules for mobile horisontal and tablet vertical */
