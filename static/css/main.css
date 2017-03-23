@@ -11,7 +11,7 @@ body{
     display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
     min-height:100vh; /* 100% viewport height */
-    font-family:sans;
+    font-family:sans-serif;
 }
 
 header{
@@ -45,6 +45,16 @@ nav ul{
     display:none;
     flex-direction:column;
     justify-content:space-around;
+}
+
+header > nav{
+    display:flex;
+    justify-content:space-between;
+}
+
+nav .brand{
+    padding:1rem;
+    color:red;
 }
 
 nav ul li {
