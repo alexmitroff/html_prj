@@ -25,9 +25,41 @@
         </header>
         <main>
             <div class="carousel">
-                <div class="carousel-item"></div>
+                <div class="carousel-item" style="background-image:url(static/imgs/carousel/01.jpg);">
+                    <div>
+                        <h2>New Frontier in Ultrafast Fiber Laser Performance</h2>
+                        <a href="#!" class="button">More</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url(static/imgs/carousel/02.jpg);">
+                    <div>
+                        <h2>Overview of the products</h2>
+                        <a href="#!" class="button">More</a>
+                    </div>
+                </div>
             </div>
-            <div class="container"></div>
+            <div class="container">
+                <section>
+                    <div class="section-text"></div>
+                    <div class="section-image"></div>
+                </section>
+                <section>
+                    <div class="section-text"></div>
+                    <div class="section-image"></div>
+                </section>
+                <section>
+                    <div class="section-text"></div>
+                    <div class="section-image"></div>
+                </section>
+                <section>
+                    <div class="section-text"></div>
+                    <div class="section-image"></div>
+                </section>
+                <section>
+                    <div class="section-text"></div>
+                    <div class="section-image"></div>
+                </section>
+            </div>
         </main>
         <footer></footer>
         <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
@@ -38,7 +70,9 @@
                     $("#global-menu").toggleClass("active"); // toggle 'active' class for global menu 
                 });
                 
-                $(".carousel").slick();
+                $(".carousel").slick({
+                    autoplay: true,
+                });
             });
         </script>
     </body>
