@@ -24,6 +24,9 @@
             </nav>
         </header>
         <main>
+            <div class="carousel">
+                <div class="carousel-item"></div>
+            </div>
             <div class="container"></div>
         </main>
         <footer></footer>
@@ -34,6 +37,8 @@
                 $("#mobile-menu-button").click(function(){   // add function to button click event which will
                     $("#global-menu").toggleClass("active"); // toggle 'active' class for global menu 
                 });
+                
+                $(".carousel").slick();
             });
         </script>
     </body>
