@@ -12,7 +12,6 @@
     }
 
 body{
-    background-color:#eee;
     display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
     min-height:100vh; /* 100% viewport height */
@@ -55,7 +54,7 @@ footer .copyright{
     padding:.5rem 0;
     color:#888;
     text-align: center;
-    font-size: .6rem;
+    font-size: .7rem;
     background-color: rgba(0,0,0,.4);
 }
 
@@ -107,6 +106,7 @@ nav ul li a:hover{
     border:none;
     color:#888;
     cursor:pointer;
+    align-self:flex-start;
 }
 
 #mobile-menu-button:hover{
@@ -159,6 +159,11 @@ ul.active{
     border:.07rem solid white;
     text-decoration: none;
     border-radius: .2rem;
+}
+
+.carousel-item > div > a.button-green:hover{
+    color:green;
+    border-color:green;
 }
 
 h2.separator{
@@ -265,7 +270,7 @@ section > a:hover .product h3{
     section:nth-child(odd) > .section-text{order:0;}
     section:nth-child(odd) > .section-image,
     section:nth-child(even) > .section-text{order:1;}
-    section > a {width:50%;}
+    section > a {width:25%;}
    .products{flex-direction:row;flex-wrap:wrap;} 
 }
 
@@ -276,10 +281,10 @@ section > a:hover .product h3{
 
 /* Rules for middle screens */
 @media (min-width:920px) and (max-width:1199px) {
-    .container{width:920px;}
+    .container{width:75%;}
 }
 
 /* Rules for large screens */
 @media (min-width:1200px) {
-    .container{width:920px;}
+    .container{width:65%;}
 }
