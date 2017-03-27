@@ -229,11 +229,8 @@ section > a {
 
 section > a > .product{
     width:100%;
-    background-color:#888;
-}
-
-section > a:nth-child(odd) > .product{
-    background-color:#444;
+    background-size:cover;
+    background-position:center;
 }
 
 section > a > .product:before{
@@ -274,10 +271,6 @@ section > a:hover .product h3{
 .brand > svg * {
     fill:#d51118;   
 }
-
-.products{
-    margin-top:1rem;
-} 
 
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width:560px) and (max-width:767px) {
