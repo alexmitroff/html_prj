@@ -63,6 +63,7 @@ nav ul{
     display:none;
     flex-direction:column;
     justify-content:space-around;
+    align-items:center;
 }
 
 header > nav{
@@ -250,6 +251,20 @@ section > a:hover .product h3{
 
 .address{
     list-style: none;
+}
+
+.brand{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.brand > svg{
+    height:2rem;
+}
+
+.brand > svg * {
+    fill:#d51118;   
 }
 
 
