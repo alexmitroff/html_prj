@@ -43,6 +43,12 @@
     </g>
 </svg>
                 </div>
+                <ul>
+                    <li><a href="#!">about</a></li>
+                    <li><a href="#!">technology</a></li>
+                    <li><a href="#!">products</a></li>
+                    <li><a href="#!">contacts</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -76,48 +82,48 @@
                             </div>
                         </div>
                     </a>
-                </section>    
-                <h2 class="separator">About</h2>
+                </section> 
                 <section>
-                    <div class="section-text">
-                        <h3>The Company</h3>
-                        <p>Ampliconyx Oy is a Tampere based spin-off company from Optoelectronics Research Centre of Tampere University of Technology (www.tut.fi/orc) – European leader in photonics technology. Thanks to its proprietary IP, Ampliconyx offers unmatched cost/performance in ultrafast all-fiber lasers and amplifiers for major industries with tremendous market potential based on wide range of applications. </p>
+                    <div class="carousel">
+                        <div class="carousel-item" style="background-image:url(static/imgs/carousel/01.jpg);">
+                            <div>
+                                <h2>New Frontier in Ultrafast Fiber Laser Performance</h2>
+                                <a href="#!" class="button">More</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="background-image:url(static/imgs/carousel/02.jpg);">
+                            <div>
+                                <h2>Overview of the products</h2>
+                                <a href="#!" class="button button-green">More</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="section-image"></div>
                 </section>
                 <section>
-                    <div class="section-text">
-                        <h3>The Team and Experience</h3>
-                        <p>Ampliconyx core team comprises highly experienced professionals with prominent track in optoelectronics, fiber laser technology, optoelectronic system engineering and business development. Team know-how includes system design as well as manufacturing technology of key component and allows to design and manufacturing of broad range of fiber optical devices, including powerful supercontinuum generators - “white lasers”, high power femtosecond lasers, LIDARs, mid infrared lasers and others.</p>
-                        <p>The company management team has over 10 years’ experience in managing start-up companies, product development, sales and marketing, transition to mass production phase and high volume production management. Track records includes exits for investors with multiple returns.</p>
+                    <div class="news">
+                        <div class="news-item">
+                            <h2>ULTRAFAST ALL-FIBER LASERS</h2>
+                            <p>The Ampliconyx ultrafast all-fiber amplifiers and lasers offer a wide range of pulse lengths in picosecond range, pulse energy as high as 300 uJ and optical peak power in megawatt range. For more information, please contact us.</p>
+                        </div>
+                        <div class="news-item">
+                            <h2>Latest news</h2>
+                            <p>Ampliconyx Oy, a Tampere
+                            
+                            based spin-off company
+                            
+                            from Optoelectronics
+                            
+                            Research Centre
+                            
+                            (www.tut.fi/orc),
+                            
+                            established 10/2016.</p>
+                        </div>
                     </div>
-                    <div class="section-image"></div>
-                </section>
-                <h2 class="separator">Technology</h2>
-                <section>
-                    <div class="section-text">
-                        <p>Ampliconix patent protected IP – active tapered double clad fibers (T-DC fibers) – allows to push performance of all-fiber ultrafast lasers to that of much more expensive solid state lasers and let its customers to benefit from high performance alongside with modest cost, high reliability and life time, and high energy efficiency of all-fiber solution.</p>
-                    </div>
-                    <div class="section-image"></div>
-                </section>
-                <section>
-                    <div class="section-text">
-                        <p>Ultrafast (picosecond and femtosecond) lasers bring new unexplored possibilities in ultrahigh precision and ultrahigh quality processing of hard and fragile (boron carbide, sapphire, ceramics, glass), thermally conductive (diamond) and artificially engineered materials with unique properties (composites including carbon fiber reinforced plastics, metal-carbon plastic assembly) and welding of dissimilar materials. Besides material processing, there is a number of applications in information and communication technologies – LIDARs and optical sensing, THz emission generation, medicine – instrument and implant manufacturing and many others.</p>
-                    </div>
-                    <div class="section-image"></div>
-                </section>
-                <h2 class="separator">Contact</h2>
-                <section>
-                    <div class="section-text">
-                        <form>
-                            <input class="text">
-                            <input class="textarea">
-                            <input type="submit">
-                        </form>
-                    </div>
-                    <div class="section-image"></div>
-                </section>
-            </div>
+                </section>  
+                <div class="btn">
+                   <a href=#!>read more</a>
+                </div>
         </main>
         <footer>
             <div class="container">
@@ -143,6 +149,7 @@
                 $(".carousel").slick({
                     autoplay: true,
                     arrows:false,
+                    dots:true
                 });
             });
         </script>
