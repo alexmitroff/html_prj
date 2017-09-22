@@ -1,115 +1,98 @@
 /* Rules for small devices (mobile vertical) */
-
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box; /* height and width will include border and padding */
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height and width will include border and padding */ }
 
-body{
-    background-color:#eee;
-    display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-    flex-direction:column;
-    min-height:100vh; /* 100% viewport height */
-    font-family:sans;
-}
+body {
+  background-color: #eee;
+  display: flex;
+  /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  flex-direction: column;
+  min-height: 100vh;
+  /* 100% viewport height */
+  font-family: sans; }
+body > header {
+  display: block;
+  min-height: 3rem;
+  background-color: #fff; }
+body > main {
+  flex-grow: 1;
+  padding: 1rem 0;
+  /* similar to '1rem 0 1rem 0' clockwise starts from top */ }
+body > main > div {
+  display: block;
+  background-color: red;
+  height: 100%; }
+body > footer {
+  display: block;
+  background-color: #444;
+  color: #fff;
+  /* font color */
+  min-height: 10rem; }
 
-header{
-    display:block;
-    min-height:3rem;
-    background-color:#fff; /* also can be 'white' 
-                            or 'rgb(255,255,255)' 
-                            or 'rgba(255,255,255,1.0)' */
-}
+nav > ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around; }
+nav > ul > li {
+  padding: 1rem; }
+nav > ul > li > a {
+  transition: all .3s ease-in-out 0s;
+  text-decoration: none;
+  color: #888; }
+nav > ul > li > a:hover {
+  color: #444; }
 
-main {
-    flex-grow:1;
-    padding: 1rem 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
-}
+.container {
+  width: 100%;
+  margin: 0 auto; }
 
-main > div{
-    display:block;
-    background-color:red;
-    height:100%;
-}
+#mobile-menu-button {
+  display: block;
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer; }
 
-footer{
-    display:block;
-    background-color:#444;
-    color: #fff; /* font color */
-    min-height: 10rem;
-}
+#mobile-menu-button:hover {
+  color: #444; }
 
-nav ul{
-    list-style:none;
-    display:none;
-    flex-direction:column;
-    justify-content:space-around;
-}
-
-nav ul li {
-    padding:1rem;
-}
-
-nav ul li a{
-    transition: all .3s ease-in-out 0s;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:#888;
-}
-
-nav ul li a:hover{
-    color:#444;
-}
-
-.container{
-    width:100%;
-    margin:0 auto;
-}
-
-#mobile-menu-button{
-    display:block;
-    padding:1rem;
-    background:none;
-    border:none;
-    color:#888;
-    cursor:pointer;
-}
-
-#mobile-menu-button:hover{
-    color:#444;
-}
-
-ul.active{
-    display:flex;
-}
+ul.active {
+  display: flex; }
 
 /* Rules for mobile horisontal and tablet vertical */
-@media (min-width:560px) and (max-width:767px) {
-    main > div{background-color:orange;}
-}
-
+@media (min-width: 560px) and (max-width: 767px) {
+  main > div {
+    background-color: orange; } }
 /* Rules commot to screens bigger than tablet screens */
-@media (min-width:768px) {
-    nav > ul{display:flex; flex-direction:row;}
-    #mobile-menu-button{display:none;}
-}
+@media (min-width: 768px) {
+  nav > ul {
+    display: flex;
+    flex-direction: row; }
 
+  #mobile-menu-button {
+    display: none; } }
 /* Rules for tablet horisontal and small ultrabook screens */
-@media (min-width:768px) and (max-width:919px) {
-    main > div{background-color:yellow;}
-}
-
+@media (min-width: 768px) and (max-width: 919px) {
+  main > div {
+    background-color: yellow; } }
 /* Rules for middle screens */
-@media (min-width:920px) and (max-width:1199px) {
-    main > div{background-color:green;}
-    .container{width:920px;}
-}
+@media (min-width: 920px) and (max-width: 1199px) {
+  main > div {
+    background-color: green; }
 
+  .container {
+    width: 920px; } }
 /* Rules for large screens */
-@media (min-width:1200px) {
-    main > div{background-color:skyblue;}
-    .container{width:920px;}
-}
+@media (min-width: 1200px) {
+  main > div {
+    background-color: skyblue; }
+
+  .container {
+    width: 920px; } }
+
+/*# sourceMappingURL=main.css.map */
