@@ -5,6 +5,17 @@
   box-sizing: border-box;
   /* height and width will include border and padding */ }
 
+html {
+  color: #444; }
+
+a {
+  transition: all .3s ease-in-out 0s;
+  text-decoration: none;
+  color: #888; }
+
+a:hover {
+  color: #444; }
+
 body {
   background-color: #fff;
   display: flex;
@@ -42,12 +53,6 @@ nav > ul {
   justify-content: space-around; }
 nav > ul > li {
   padding: 1rem; }
-nav > ul > li > a {
-  transition: all .3s ease-in-out 0s;
-  text-decoration: none;
-  color: #888; }
-nav > ul > li > a:hover {
-  color: #444; }
 
 .container {
   width: 100%;
@@ -76,6 +81,33 @@ h1 {
 .menu {
   border-top: 0.1rem solid #ccc;
   border-bottom: 0.1rem solid #ccc; }
+
+.card {
+  background-color: #fff;
+  padding: 2rem 3rem; }
+.card > * {
+  text-transform: uppercase;
+  text-align: center; }
+.card > h2 {
+  font-size: 1.2rem;
+  font-weight: 400; }
+.card > p {
+  font-size: 0.66667rem; }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.info > .tel {
+  text-transform: uppercase;
+  font-size: 1.5rem; }
+
+.proposal {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0; }
 
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width: 560px) and (max-width: 767px) {
