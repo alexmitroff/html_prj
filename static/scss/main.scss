@@ -1,5 +1,16 @@
 /* Rules for small devices (mobile vertical) */
 
+$font-default:#444;
+$font-light:#888;
+$font-lighter:#ccc;
+$font-white:#fff;
+
+$footer-back:#cdd18b;
+
+$unit:1rem;
+
+$light-border: $unit/10 solid $font-lighter;
+
 * {
     margin:0;
     padding:0;
@@ -7,21 +18,26 @@
     }
 
 body{
-    background-color:#eee;
+    background-color:$font-white;
     display:flex; /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     flex-direction:column;
     min-height:100vh; /* 100% viewport height */
-    font-family:sans;
+    font-family:'PT Serif', serif;
     
     > header{
         display:block;
         min-height:3rem;
-        background-color:#fff; 
+        background-color:#fff;
+
+        .logo, .tel{
+            min-height:$unit*2;
+            margin-top:$unit*2;
+        }
     }
 
     > main {
         flex-grow:1;
-        padding: 1rem 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
+        padding: $unit*3 0 0 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
         > div{
             display:block;
             background-color:red;
@@ -31,8 +47,8 @@ body{
 
     > footer{
         display:block;
-        background-color:#444;
-        color: #fff; /* font color */
+        background-color: $footer-back;
+        color: $font-white; /* font color */
         min-height: 10rem;
     }
 }
@@ -80,6 +96,18 @@ nav{
 
 ul.active{
     display:flex;
+}
+
+h1{
+    text-align:center;
+    font-size:$unit*2;
+    font-weight:400;
+    margin-bottom:$unit*2;
+}
+
+.menu{
+    border-top:$light-border;
+    border-bottom:$light-border;
 }
 
 /* Rules for mobile horisontal and tablet vertical */

@@ -6,20 +6,23 @@
   /* height and width will include border and padding */ }
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   display: flex;
   /* read more at https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
   flex-direction: column;
   min-height: 100vh;
   /* 100% viewport height */
-  font-family: sans; }
+  font-family: 'PT Serif', serif; }
 body > header {
   display: block;
   min-height: 3rem;
   background-color: #fff; }
+body > header .logo, body > header .tel {
+  min-height: 2rem;
+  margin-top: 2rem; }
 body > main {
   flex-grow: 1;
-  padding: 1rem 0;
+  padding: 3rem 0 0 0;
   /* similar to '1rem 0 1rem 0' clockwise starts from top */ }
 body > main > div {
   display: block;
@@ -27,7 +30,7 @@ body > main > div {
   height: 100%; }
 body > footer {
   display: block;
-  background-color: #444;
+  background-color: #cdd18b;
   color: #fff;
   /* font color */
   min-height: 10rem; }
@@ -63,6 +66,16 @@ nav > ul > li > a:hover {
 
 ul.active {
   display: flex; }
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem; }
+
+.menu {
+  border-top: 0.1rem solid #ccc;
+  border-bottom: 0.1rem solid #ccc; }
 
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width: 560px) and (max-width: 767px) {
