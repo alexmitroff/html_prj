@@ -9,7 +9,8 @@ $footer-back:#cdd18b;
 
 $unit:1rem;
 
-$light-border: $unit/10 solid $font-lighter;
+$light-border: $unit*0.1 solid $font-lighter;
+$dots-border: $unit*0.1 dashed $font-default;
 
 * {
     margin:0;
@@ -148,6 +149,46 @@ h1{
     justify-content:center;
     align-items:center;
     padding:$unit*6 0;
+}
+
+.edge{
+    display:flex;
+    align-items:center;
+    .dots{
+        display:block;
+        margin: $unit*2 0;
+        border-top:$dots-border;
+        flex-grow:1;
+    }
+
+    h2{
+        text-transform:uppercase;
+        font-size:$unit*1.7;
+        font-weight:400;
+        padding:0 $unit*2;  
+    }
+}
+
+.courses{
+    .content{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+    }
+}
+
+.course{
+    min-height:$unit*25;
+    width:$unit*25;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    background:#ddd;
+    .course-content{
+        min-height:$unit*2;
+        background-color:#ccc;
+        display:block;
+    }
 }
 
 /* Rules for mobile horisontal and tablet vertical */

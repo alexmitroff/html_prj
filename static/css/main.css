@@ -109,6 +109,37 @@ h1 {
   align-items: center;
   padding: 6rem 0; }
 
+.edge {
+  display: flex;
+  align-items: center; }
+.edge .dots {
+  display: block;
+  margin: 2rem 0;
+  border-top: 0.1rem dashed #444;
+  flex-grow: 1; }
+.edge h2 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 0 2rem; }
+
+.courses .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.course {
+  min-height: 25rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #ddd; }
+.course .course-content {
+  min-height: 2rem;
+  background-color: #ccc;
+  display: block; }
+
 /* Rules for mobile horisontal and tablet vertical */
 @media (min-width: 560px) and (max-width: 767px) {
   main > div {

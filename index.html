@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Simple html project</title>
+        <title>МОРИЯ</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="static/css/main.css">
     </head>
@@ -34,7 +34,24 @@
                     <p>набор в сентябре</p>
                 </div>
             </section>
-            <section class="courses"></section>
+            <section class="courses container">
+                <div class="edge">
+                    <div class="dots"></div>
+                    <h2>Наши курсы</h2>
+                    <div class="dots"></div>
+                </div>
+                <div class="content">
+                    <div class="course">
+                        <div class="course-content"></div>
+                    </div>
+                    <div class="course">
+                        <div class="course-content"></div>
+                    </div>
+                </div>
+                <div class="edge">
+                    <div class="dots"></div>
+                </div>
+            </section>
             <section class="action"></section>
         </main>
         <footer></footer>
@@ -42,7 +59,7 @@
         <script type="text/javascript">
             $(document).ready(function(){                    // When HTML document ready execute scripts
                 $("#mobile-menu-button").click(function(){   // add function to button click event which will
-                    $("#global-menu").toggleClass("active"); // toggle 'active' class for global menu 
+                    $("#global-menu").toggleClass("active"); // toggle active' class for global menu 
                 });
             });
         </script>
