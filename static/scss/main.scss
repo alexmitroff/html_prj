@@ -5,6 +5,10 @@ $font-light:#888;
 $font-lighter:#ccc;
 $font-white:#fff;
 
+$transition:all .3s ease-in-out 0s;
+
+$course-content:rgba(126,133,188,.5);
+
 $footer-back:#cdd18b;
 
 $unit:1rem;
@@ -23,7 +27,7 @@ html{
 }
 
 a{
-    transition: all .3s ease-in-out 0s;
+    transition: $transition;
     text-decoration:none;
     color:$font-light;
 }
@@ -52,7 +56,7 @@ body{
 
     > main {
         flex-grow:1;
-        padding: $unit*3 0 0 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
+        padding: $unit*3 0; /* similar to '1rem 0 1rem 0' clockwise starts from top */
         > div{
             display:block;
             background-color:red;
@@ -64,7 +68,28 @@ body{
         display:block;
         background-color: $footer-back;
         color: $font-white; /* font color */
-        min-height: $unit*10;
+
+        > section{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+            min-height: $unit*10;
+        }
+    }
+}
+
+.social{
+    p:last-child{
+        text-align:center;
+    }
+    a{
+        color:$font-white;
+        font-size:$unit*2;
+        padding-right:$unit*2;
+    }
+    a:last-child{
+        padding:0;
     }
 }
 
@@ -137,12 +162,14 @@ h1{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-bottom:$unit*2;
     > .tel{
         text-transform:uppercase;
         font-size:$unit*1.5; 
     }
 }
 
+.action,
 .proposal{
     background-color:$font-lighter;
     display:flex;
@@ -159,6 +186,10 @@ h1{
         margin: $unit*2 0;
         border-top:$dots-border;
         flex-grow:1;
+    }
+
+    .dots-last{
+        margin-top:0;
     }
 
     h2{
@@ -178,17 +209,57 @@ h1{
 }
 
 .course{
+    transition:$transition;
     min-height:$unit*25;
     width:$unit*25;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
     background:#ddd;
+    margin-bottom:$unit*2;
     .course-content{
         min-height:$unit*2;
-        background-color:#ccc;
-        display:block;
+        background-color:$course-content;
+        display:flex;
+        padding:$unit;
+        flex-direction:column;
+        align-items:center;
+        color:$font-white;
+        h3{
+            text-transform:uppercase;
+            font-size:$unit*1.5;
+            font-weight:400;
+        }
+
+        p{
+            overflow:hidden;
+            height:0;
+        }
+
+        a{
+            margin-top:$unit;
+            color:$font-white;
+            padding: $unit*0.5 $unit;
+            border:$unit*0.1 solid $font-white;
+            border-radius:$unit*0.2;
+        }
+
+        a:hover,
+        a:focus{
+            background-color:$font-white;
+            color:$course-content;
+        }
     }
+}
+
+.course:focus,
+.course:hover p{
+    height:auto;
+}
+
+#map{
+    height:$unit*20;
+    margin-top:$unit*3;
 }
 
 /* Rules for mobile horisontal and tablet vertical */

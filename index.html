@@ -6,6 +6,16 @@
         <title>МОРИЯ</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&amp;subset=cyrillic" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="static/font-awesome/css/font-awesome.min.css">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+            ymaps.ready(function () {  
+                var map = new ymaps.Map("map", {
+                    center: [60.033540, 30.242036], 
+                    zoom: 15
+                });
+            });
+        </script>
     </head>
     
     <body>
@@ -41,22 +51,62 @@
                     <div class="dots"></div>
                 </div>
                 <div class="content">
-                    <div class="course">
-                        <div class="course-content"></div>
-                    </div>
-                    <div class="course">
-                        <div class="course-content"></div>
-                    </div>
+                    <article class="course">
+                        <main class="course-content">
+                            <h3>Живопись</h3>
+                            <p>Искусство изображать действительность красками.</p>
+                            <a href=#!>Подробнее...</a>
+                        </main>
+                    </article>
+                    <article class="course">
+                        <main class="course-content">
+                            <h3>ЧЕТАМЕЩЕ</h3>
+                            <p></p>
+                            <a href=#!>Подробнее...</a>
+                        </main>
+                    </article>
+                    <article class="course">
+                        <main class="course-content">
+                            <h3>Живопись</h3>
+                            <p>Искусство изображать действительность красками.</p>
+                            <a href=#!>Подробнее...</a>
+                        </main>
+                    </article>
+                    <article class="course">
+                        <main class="course-content">
+                            <h3>ЧЕТАМЕЩЕ</h3>
+                            <p></p>
+                            <a href=#!>Подробнее...</a>
+                        </main>
+                    </article>
                 </div>
                 <div class="edge">
-                    <div class="dots"></div>
+                    <div class="dots dots-last"></div>
                 </div>
             </section>
-            <section class="action"></section>
+            <section class="action container">
+                <div class="card">
+                    <p>набор в сентябре</p>
+                    <h2>Записаться</h2>
+                </div>
+            </section>
+            <section id="map" class="container"></section>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="container">
+                <div></div>
+                <div class="social">
+                    <p>Мы в социальных сетях:</p>
+                    <p>
+                        <a href="#!"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </p>    
+                </div>
+            </section>
+        </footer>
         <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript">
+            
             $(document).ready(function(){                    // When HTML document ready execute scripts
                 $("#mobile-menu-button").click(function(){   // add function to button click event which will
                     $("#global-menu").toggleClass("active"); // toggle active' class for global menu 
